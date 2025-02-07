@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="style1.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container d-flex flex-row justify-content-center">
+      <div class="row col-md-6 col-md-offset-3 ">
+        <div class="panel-heading text-center text-white bg-primary">
+          <h1>Registration Form</h1>
+        </div>
+        <div class="form1 panel panel-primary">
+          <div class="panel-body">
+            <form action="connect.php" method="post">
+              <div class="form-group">
+                <label for="want_to_complaint">Want To complaint</label>
+                <div>
+                  <label for="male" class="radio-inline"><input type="radio" name="want_to_complaint" value="p" id="male" onclick="hideFormElements()">personal</label>
+                  <label for="female" class="radio-inline space"><input type="radio" name="want_to_complaint" value="u" id="female" onclick="showFormElements()" checked>public</label>
+                </div>
+                <div id="formElements" class="hidden">
+                  <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" class="form-control" id="firstName" name="firstName">
+                  </div>
+                  <div class="form-group">
+                    <label for="lastName">REGISTER NUMBER</label>
+                    <input type="number" class="form-control" id="registerNumber" name="lastName">
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" name="email">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="department">DEPARTMENT</label>
+                  <input type="text" class="form-control" id="department" name="department">
+                </div>
+                <div class="form-group">
+                  <label for="year">YEAR</label>
+                  <div>
+                    <label for="1styear" class="radio-inline space"><input type="radio" name="year" value="I" id="1styear">1st YEAR</label>
+                    <label for="2ndyear" class="radio-inline space"><input type="radio" name="year" value="II" id="2ndyear">2nd YEAR</label>
+                    <label for="3rdyear" class="radio-inline space"><input type="radio" name="year" value="III" id="3rdyear">3rd YEAR</label>
+                    <label for="finalyear" class="radio-inline space"><input type="radio" name="year" value="IV" id="finalyear">FINAL YEAR</label>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="gender">Gender</label>
+                  <div>
+                    <label for="male" class="radio-inline space"><input type="radio" name="gender" value="m" id="male">Male</label>
+                    <label for="female" class="radio-inline space"><input type="radio" name="gender" value="f" id="female">Female</label>
+                    <label for="others" class="radio-inline space"><input type="radio" name="gender" value="o" id="others">Others</label>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="place">PLACE</label>
+                  <div>
+                    <label for="college" class="radio-inline space"><input type="radio" name="place" value="c" id="college">COLLEGE</label>
+                    <label for="hostel" class="radio-inline space"><input type="radio" name="place" value="h" id="hostel">HOSTEL</label>
+                    <label for="bus" class="radio-inline space"><input type="radio" name="place" value="b" id="bus" checked>BUS</label>
+                    <input type="number" id="busNumber" class="hidden">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="complaint">COMPLAINT</label>
+                  <input type="text" class="form-control" id="complaint" name="complaint">
+                </div>
+                <div class="form-group">
+                  <label for="number">Phone Number</label>
+                  <input type="number" class="form-control" id="phoneNumber" name="number">
+                </div>
+                <input type="submit" class="btn mt-3 mb-3 btn-primary">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

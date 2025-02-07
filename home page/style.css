@@ -1,0 +1,10 @@
+.container{
+    box-shadow: 2px 2px 5px;
+}
+#heading{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    height: 40px;
+}
